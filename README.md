@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="SNEKBGTOP.jpg" alt="SnekBot Banner" width="620">
+  <img src="SNEKBGTOP_README.jpg" alt="SnekBot Banner" width="620">
 
   # SnekBot 🐍 💸
 
