@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="SNEKBGTOP.jpg" alt="SnekBot Banner" width="900">
+  <img src="SNEKBGTOP.jpg" alt="SnekBot Banner" width="620">
 
   # SnekBot 🐍 💸
 
@@ -42,22 +42,5 @@ over time. It is not meant to be perfect—just fun to use and explore!
 - [Terms of Service](terms.html)
 - [Contact](contact.html)
 - [Support Server](https://discord.gg/pMEtS9te73)
-
----
-
-## Deutsch
-
-SnekBot ist ein kleines privates Projekt und ein spielerisches
-Finanzmarktspiel/Simulator auf Discord. Du kannst verschiedene Assets über Spot
-oder Futures handeln, dein Portfolio verfolgen und dich in den Ranglisten mit
-anderen messen.
-
-Der SnekMarket orientiert sich an vereinfachten Mechaniken realer Märkte wie
-Trends, Volatilität und Korrekturen, damit sich die Preise nicht rein zufällig
-anfühlen. Das Ziel ist ein lockeres, spielerisches Trading-Erlebnis, ohne
-unnötig kompliziert oder ernst zu sein.
-
-Sämtliche SNEK-Beträge, Assets, Belohnungen und Spieleinsätze sind ausschließlich
-virtuelle Spielwerte ohne realen Geldwert.
 
 **Have fun! ^_^**
