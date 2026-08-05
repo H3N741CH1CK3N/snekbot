@@ -1,7 +1,9 @@
 <div align="center">
   <img src="readmebanner.png" alt="SnekBot Banner" width="620">
 
-  **SnekBot - A playful financial market game/simulator for Discord**  🐍 💸
+  # SnekBot
+
+  **A playful financial market game/simulator for Discord**  🐍 💸
 </div>
 
 ## About SnekBot
