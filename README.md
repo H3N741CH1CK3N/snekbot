@@ -18,7 +18,7 @@ not feel random. It is designed to provide a light, game-like trading
 experience without being overly complex or serious.
 
 I built SnekBot mainly to experiment with and test ideas, so things may change
-over time. It is not meant to be perfect - just fun to use and explore!
+over time. It is not meant to be perfect.. just fun to use and explore!
 
 ## Features
 
