@@ -40,8 +40,8 @@ over time. It is not meant to be perfect, just fun to use and explore!
 
 ## Information
 
-- [Website](https://h3n741ch1ck3n.github.io/snekbot/)
-- [Privacy Policy](https://h3n741ch1ck3n.github.io/snekbot/privacy.html)
-- [Terms of Service](https://h3n741ch1ck3n.github.io/snekbot/terms.html)
-- [Contact](https://h3n741ch1ck3n.github.io/snekbot/contact.html)
+- [Website](https://github.com/H3N741CH1CK3N/snekbot/blob/main/index-en.html)
+- [Privacy Policy](https://github.com/H3N741CH1CK3N/snekbot/blob/main/privacy-en.html)
+- [Terms of Service](https://github.com/H3N741CH1CK3N/snekbot/blob/main/terms-en.html)
+- [Contact](https://github.com/H3N741CH1CK3N/snekbot/blob/main/contact-en.html)
 - [Support Server](https://discord.gg/pMEtS9te73)
