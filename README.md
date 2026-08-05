@@ -40,8 +40,8 @@ over time. It is not meant to be perfect, just fun to use and explore!
 
 ## Information
 
-- [Website](index.html)
-- [Privacy Policy](privacy.html)
-- [Terms of Service](terms.html)
-- [Contact](contact.html)
+- [Website](https://h3n741ch1ck3n.github.io/snekbot/)
+- [Privacy Policy](https://h3n741ch1ck3n.github.io/snekbot/privacy.html)
+- [Terms of Service](https://h3n741ch1ck3n.github.io/snekbot/terms.html)
+- [Contact](https://h3n741ch1ck3n.github.io/snekbot/contact.html)
 - [Support Server](https://discord.gg/pMEtS9te73)
