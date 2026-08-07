@@ -31,7 +31,11 @@
         <li>virtuelle Guthaben, Ledger-Buchungen, Transfers und Belohnungen;</li>
         <li>Spot-Orders, Futures-Positionen, S-Bot-Aktivitäten und Portfolioinformationen;</li>
         <li>Casino- und Spielprofile, virtuelle Einsätze, Fortschritt und Ergebnisse;</li>
-        <li>Profilgegenstände, Präferenzen, Premiumstatus und persönliche Anzeigeeinstellungen;</li>
+        <li>Profilgegenstände, Präferenzen, VIP-Status und persönliche Anzeigeeinstellungen;</li>
+        <li>Treasury-Angebote und -Käufe, einschließlich Angebotsart, Preis, Bestand, Rollen-ID, Kauf-, Auslieferungs- und Erstattungsstatus;</li>
+        <li>Server-VIP-Zuweisungen einschließlich Status, Bindungs-, Übergangs- und Cooldown-Zeiten;</li>
+        <li>Economy-Reset-Anfragen einschließlich anfragendem Nutzer, Server, Zeitpunkt und Bearbeitungsstatus;</li>
+        <li>vorübergehende Zustellinformationen für Handels-, Transfer- und Treasury-Benachrichtigungen, die Discord-User- und Server-IDs enthalten können;</li>
         <li>Befehls-, Fehler- und Workerinformationen in technischen Protokollen, die Discord-User- und Server-IDs enthalten können.</li>
       </ul>
       <p>SnekBot erhält weder Discord-Passwörter noch Zahlungsdaten der Nutzer. Globale simulierte Marktpreise, Preisverläufe, Ereignisse, Stimmungen und Marktregime sind keine personenbezogenen Nutzerdaten.</p>
@@ -45,15 +49,18 @@
       <p>Das berechtigte Interesse besteht im sicheren, stabilen und fairen Betrieb des Bots und seiner virtuellen Economy.</p>
 
       <h2>5. Servertrennung und globale Daten</h2>
-      <p>Guthaben, Orders, Positionen, Spiele, Profile und die meisten Einstellungen werden getrennt nach Discord-Server gespeichert. Globale Marktpreise gelten für alle Server. Bestimmte Nutzerpräferenzen und Berechtigungen, etwa der Premiumstatus, können global pro Discord-Nutzer gespeichert werden.</p>
+      <p>Guthaben, Orders, Positionen, Spiele, Profile und die meisten Einstellungen werden getrennt nach Discord-Server gespeichert. Globale Marktpreise gelten für alle Server. Bestimmte Nutzerpräferenzen und Berechtigungen, etwa der VIP-Status, können global pro Discord-Nutzer gespeichert werden.</p>
 
       <h2>6. Speicherung und Aufbewahrung</h2>
       <p>Personenbezogene Daten werden gespeichert, solange ein Nutzer SnekBot verwendet und die Daten zur Bereitstellung der gewünschten Funktionen, für nachvollziehbare virtuelle Guthaben, zur Missbrauchsabwehr oder zur Erfüllung rechtlicher Pflichten erforderlich sind. Dauerhafte Botdaten liegen in einer vom Betreiber kontrollierten PostgreSQL-Datenbank.</p>
       <p>Technische Protokolle mit Discord-User- oder Server-ID werden nur so lange aufbewahrt, wie dies für Sicherheit und Fehleranalyse erforderlich ist, und anschließend rotiert oder gelöscht. Transaktions- und Spielhistorien bleiben erhalten, solange sie für Guthabennachweise, Lebenszeitstatistiken oder Datenschutzexporte benötigt werden. Sie werden gelöscht, wenn die zugehörigen Nutzerdaten wirksam gelöscht werden und keine offene Transaktion entgegensteht.</p>
+      <p>Zur Absicherung gegen Datenverlust werden täglich vollständige PostgreSQL-Backups erstellt und grundsätzlich höchstens 14 Tage aufbewahrt. Die Backups liegen in einem nicht öffentlichen, zugriffsbeschränkten Verzeichnis und sind nur für den Betreiber beziehungsweise zuständige Systemadministratoren bestimmt.</p>
+      <p>Eine Löschung entfernt personenbezogene Daten aus der aktiven Datenbank. Bereits zuvor erstellte Backups können diese Daten bis zum Ablauf ihrer Aufbewahrungsfrist weiterhin enthalten. Solche Sicherungen werden nicht genutzt, um einzelne gelöschte Nutzerkonten wiederherzustellen. Bei einer vollständigen Systemwiederherstellung müssen Löschungen, die nach dem Sicherungszeitpunkt erfolgt sind, erneut berücksichtigt werden.</p>
 
       <h2>7. Auskunft und Löschung</h2>
-      <p>Mit dem privaten Discord-Befehl <code>/privacy</code> können Nutzer eine verständliche Zusammenfassung und optional einen technischen JSON-Export ihrer gespeicherten Daten anfordern. Dort können Daten des aktuellen Servers oder sämtliche eigenen SnekBot-Nutzerdaten gelöscht werden.</p>
-      <p>Eine Löschung wird vorübergehend blockiert, solange offene Futures-Positionen, Spot-Orders oder gesperrte Deathroll-Runden bestehen. Diese müssen zuerst geschlossen oder abgerechnet werden.</p>
+      <p>Mit dem privaten Discord-Befehl <code>/privacy</code> können Nutzer eine verständliche Zusammenfassung und optional eine technische JSON-Zusammenfassung ihrer gespeicherten Daten anfordern. Dort können Daten des aktuellen Servers oder sämtliche eigenen SnekBot-Nutzerdaten gelöscht werden. Für eine weitergehende formelle Auskunft kann der in dieser Datenschutzerklärung genannte Kontakt genutzt werden.</p>
+      <p>Eine Löschung wird vorübergehend blockiert, solange offene Futures-Positionen, Spot-Orders, gesperrte Deathroll-Runden oder noch ausstehende Treasury-Käufe beziehungsweise -Auslieferungen bestehen. Diese müssen zuerst geschlossen, abgerechnet oder abgeschlossen werden.</p>
+      <p>Betriebliche Treasury-Angebote und Economy-Reset-Historien können für den jeweiligen Discord-Server erhalten bleiben, wenn sie für Auslieferung, Nachvollziehbarkeit oder Sicherheit benötigt werden. Die Discord-User-ID des gelöschten Nutzers wird dabei entfernt.</p>
       <p>Nach einer Löschung kann ein nicht rückrechenbarer kryptografischer Löschmarker gespeichert bleiben. Er enthält nicht die lesbare Discord-User-ID und verhindert ausschließlich, dass ein einmaliges Startguthaben nach einer Löschung erneut beansprucht wird.</p>
 
       <h2>8. Empfänger und Drittanbieter</h2>
@@ -74,6 +81,6 @@
       <p>Diese Erklärung wird angepasst, wenn sich Funktionen, Datenverarbeitungen oder rechtliche Anforderungen ändern. Die aktuelle Fassung ist stets unter dieser URL verfügbar.</p>
     </article>
   </main>
-  <footer>Stand: 5. August 2026 · SnekBot</footer>
+  <footer>Stand: 7. August 2026 · SnekBot</footer>
 </body>
 </html>
