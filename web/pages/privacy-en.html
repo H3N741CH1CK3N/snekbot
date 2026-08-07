@@ -31,7 +31,11 @@
         <li>virtual balances, ledger entries, transfers and rewards;</li>
         <li>Spot orders, Futures positions, S-Bot activity and portfolio information;</li>
         <li>Casino and game profiles, virtual stakes, progress and results;</li>
-        <li>profile items, preferences, Premium status and personal display settings;</li>
+        <li>profile items, preferences, VIP status and personal display settings;</li>
+        <li>Treasury offers and purchases, including offer type, price, stock, role ID, purchase, delivery and refund status;</li>
+        <li>Server VIP assignments, including status, minimum assignment, handover and cooldown times;</li>
+        <li>Economy Reset requests, including requesting user, server, time and processing status;</li>
+        <li>temporary delivery information for trade, transfer and Treasury notifications, which may contain Discord user and server IDs;</li>
         <li>command, error and worker information in technical logs, which may contain Discord user and server IDs.</li>
       </ul>
       <p>SnekBot does not receive users' Discord passwords or payment information. Global simulated market prices, price history, events, sentiment and market regimes are not personal user data.</p>
@@ -45,15 +49,18 @@
       <p>The legitimate interest is the secure, stable and fair operation of the bot and its virtual economy.</p>
 
       <h2>5. Server Separation and Global Data</h2>
-      <p>Balances, orders, positions, games, profiles and most settings are stored separately for each Discord server. Global market prices apply to all servers. Certain user preferences and entitlements, such as Premium status, may be stored globally for each Discord user.</p>
+      <p>Balances, orders, positions, games, profiles and most settings are stored separately for each Discord server. Global market prices apply to all servers. Certain user preferences and entitlements, such as VIP status, may be stored globally for each Discord user.</p>
 
       <h2>6. Storage and Retention</h2>
       <p>Personal data is retained for as long as a user uses SnekBot and the data is required to provide requested features, maintain verifiable virtual balances, prevent abuse or comply with legal obligations. Persistent bot data is stored in a PostgreSQL database controlled by the operator.</p>
       <p>Technical logs containing Discord user or server IDs are retained only for as long as required for security and troubleshooting and are then rotated or deleted. Transaction and game histories remain available while required for balance verification, lifetime statistics or privacy exports. They are deleted when the associated user data is validly deleted and no open transaction prevents deletion.</p>
+      <p>Complete PostgreSQL backups are created daily to protect against data loss and are generally retained for no more than 14 days. The backups are kept in a non-public, access-restricted location and are available only to the operator or responsible system administrators.</p>
+      <p>A deletion removes personal data from the active database. Backups created before the deletion may continue to contain that data until their retention period expires. These backups are not used to restore individual deleted user accounts. If the complete system is restored, deletions made after the backup was created must be applied again.</p>
 
       <h2>7. Access and Deletion</h2>
-      <p>Using the private Discord command <code>/privacy</code>, users can request a readable summary and, optionally, a technical JSON export of their stored data. The same command allows users to delete data for the current server or all of their SnekBot user data.</p>
-      <p>Deletion is temporarily blocked while open Futures positions, Spot orders or locked Deathroll rounds exist. These must first be closed or settled.</p>
+      <p>Using the private Discord command <code>/privacy</code>, users can request a readable summary and, optionally, a technical JSON summary of their stored data. The same command allows users to delete data for the current server or all of their SnekBot user data. The contact stated in this Privacy Policy may be used for a more extensive formal access request.</p>
+      <p>Deletion is temporarily blocked while open Futures positions, Spot orders, locked Deathroll rounds, or pending Treasury purchases or deliveries exist. These must first be closed, settled or completed.</p>
+      <p>Operational Treasury offers and Economy Reset histories may remain available to the relevant Discord server where required for fulfilment, traceability or security. The deleted user's Discord user ID is removed from those records.</p>
       <p>After deletion, a non-reversible cryptographic deletion marker may remain. It does not contain the readable Discord user ID and is used solely to prevent a one-time starting balance from being claimed again after deletion.</p>
 
       <h2>8. Recipients and Third-Party Services</h2>
@@ -74,6 +81,6 @@
       <p>This policy will be updated when features, processing activities or legal requirements change. The current version will always be available at this URL.</p>
     </article>
   </main>
-  <footer>Last updated: August 5, 2026 · SnekBot</footer>
+  <footer>Last updated: August 7, 2026 · SnekBot</footer>
 </body>
 </html>
